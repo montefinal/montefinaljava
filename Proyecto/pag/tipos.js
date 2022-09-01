@@ -29,6 +29,7 @@ normal.onclick = () => {
     poco.innerText ="Roca, Acero",
     nulo.innerText ="Fantasma",
     vulne.innerText ="Lucha"
+    Swal.fire('Pokemones tipo Normal')
 }
 
 fuego.onclick = () => {
@@ -36,6 +37,7 @@ fuego.onclick = () => {
     poco.innerText ="Fuego, Agua, Roca, Dragón",
     nulo.innerText ="---",
     vulne.innerText ="Agua, Tierra, Roca"
+    Swal.fire('Pokemones tipo Fuego')
 }
 
 agua.onclick = () => {
@@ -43,6 +45,7 @@ agua.onclick = () => {
     poco.innerText ="Agua, Planta, Volador",
     nulo.innerText ="---",
     vulne.innerText ="Planta, Electrico"
+    Swal.fire('Pokemones tipo Agua')
 }
 
 planta.onclick = () => {
@@ -50,6 +53,7 @@ planta.onclick = () => {
     poco.innerText ="Fuego, Planta, Volador, Veneno, Bicho, Dragon, Acero",
     nulo.innerText ="---",
     vulne.innerText ="Fuego, Hielo, Veneno, Volador, Bicho"
+    Swal.fire('Pokemones tipo Planta')
 }
 
 electrico.onclick = () => {
@@ -57,6 +61,7 @@ electrico.onclick = () => {
     poco.innerText ="Planta, Electrico, Dragon",
     nulo.innerText ="Tierra",
     vulne.innerText ="Tierra"
+    Swal.fire('Pokemones tipo Electrico')
 }
 
 hielo.onclick = () => {
@@ -64,6 +69,7 @@ hielo.onclick = () => {
     poco.innerText ="Fuego, Agua, Hielo, Acero",
     nulo.innerText ="---",
     vulne.innerText ="Fuego, Lucha, Roca, Acero"
+    Swal.fire('Pokemones tipo Hielo')
 }
 
 lucha.onclick = () => {
@@ -71,6 +77,7 @@ lucha.onclick = () => {
     poco.innerText ="Veneno, Volador, Psíquico, Bicho, Hada",
     nulo.innerText ="Fantasma",
     vulne.innerText ="Volador, Psíquico, Hada"
+    Swal.fire('Pokemones tipo Lucha')
 }
 
 veneno.onclick = () => {
@@ -78,6 +85,7 @@ veneno.onclick = () => {
     poco.innerText ="Veneno, Tierra, Roca, Fantasma",
     nulo.innerText ="Acero",
     vulne.innerText ="Tierra, Psíquico"
+    Swal.fire('Pokemones tipo Veneno')
 }
 
 tierra.onclick = () => {
@@ -85,6 +93,7 @@ tierra.onclick = () => {
     poco.innerText ="Planta, Bicho",
     nulo.innerText ="Volador",
     vulne.innerText ="Agua, Planta, Hielo"
+    Swal.fire('Pokemones tipo Tierra')
 }
 
 volador.onclick = () => {
@@ -92,6 +101,7 @@ volador.onclick = () => {
     poco.innerText ="Eléctrico, Roca, Acero",
     nulo.innerText ="---",
     vulne.innerText ="Eléctrico, Hielo, Roca"
+    Swal.fire('Pokemones tipo Volador')
 }
 
 psiquico.onclick = () => {
@@ -99,6 +109,7 @@ psiquico.onclick = () => {
     poco.innerText ="Psíquico, Acero",
     nulo.innerText ="Siniestro",
     vulne.innerText ="Bicho, Fantasma, Siniestro"
+    Swal.fire('Pokemones tipo Psiquico')
 }
 
 bicho.onclick = () => {
@@ -106,6 +117,7 @@ bicho.onclick = () => {
     poco.innerText ="Fuego, Lucha, Veneno, Volador, Fantasma, Acero, Hada",
     nulo.innerText ="---",
     vulne.innerText ="Volador, Roca, Fuego"
+    Swal.fire('Pokemones tipo Bicho')
 }
 
 roca.onclick = () => {
@@ -113,6 +125,7 @@ roca.onclick = () => {
     poco.innerText ="Lucha, Tierra, Acero",
     nulo.innerText ="---",
     vulne.innerText ="Agua, Planta, Lucha, Tierra, Acero"
+    Swal.fire('Pokemones tipo Roca')
 }
 
 fantasma.onclick = () => {
@@ -120,6 +133,7 @@ fantasma.onclick = () => {
     poco.innerText ="Normal, Siniestro",
     nulo.innerText ="Normal",
     vulne.innerText ="Fantasma, Siniestro"
+    Swal.fire('Pokemones tipo Fantasma')
 }
 
 dragon.onclick = () => {
@@ -127,6 +141,7 @@ dragon.onclick = () => {
     poco.innerText ="Acero",
     nulo.innerText ="Hada",
     vulne.innerText ="Hielo, Dragón, Hada"
+    Swal.fire('Pokemones tipo Dragon')
 }
 
 siniestro.onclick = () => {
@@ -134,6 +149,7 @@ siniestro.onclick = () => {
     poco.innerText ="Lucha, Siniestro, Hada",
     nulo.innerText ="---",
     vulne.innerText ="Lucha, Bicho, Hada"
+    Swal.fire('Pokemones tipo Siniestro')
 }
 
 acero.onclick = () => {
@@ -141,6 +157,7 @@ acero.onclick = () => {
     poco.innerText ="Fuego, Agua, Eléctrico, Acero",
     nulo.innerText ="---",
     vulne.innerText ="Fuego, Lucha, Tierra"
+    Swal.fire('Pokemones tipo Acero')
 }
 
 hada.onclick = () => {
@@ -148,6 +165,7 @@ hada.onclick = () => {
     poco.innerText ="Fuego, Veneno, Acero",
     nulo.innerText ="---",
     vulne.innerText ="Veneno, Acero"
+    Swal.fire('Pokemones tipo Hada')
 }
 
 reset.onclick = () => {

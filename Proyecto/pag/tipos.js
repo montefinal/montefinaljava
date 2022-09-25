@@ -17,6 +17,7 @@ let siniestro = document.getElementById("siniestro");
 let acero = document.getElementById("acero");
 let hada = document.getElementById("hada");
 
+let tipo = document.getElementById("tipo");
 let superEficaz = document.getElementById("muy");
 let pocoEficaz = document.getElementById("poco");
 let sinEfecto = document.getElementById("nulo");
@@ -25,6 +26,7 @@ let vulnerable = document.getElementById("vulne");
 let rest = document.getElementById("reset");
 
 normal.onclick = () => {
+    tipo.innerText ="NORMAL"
     muy.innerText ="Ninguno"
     poco.innerText ="Roca, Acero",
     nulo.innerText ="Fantasma",
@@ -33,6 +35,7 @@ normal.onclick = () => {
 }
 
 fuego.onclick = () => {
+    tipo.innerText ="FUEGO"
     muy.innerText ="Planta, Hielo, Bicho, Acero"
     poco.innerText ="Fuego, Agua, Roca, Dragón",
     nulo.innerText ="---",
@@ -41,6 +44,7 @@ fuego.onclick = () => {
 }
 
 agua.onclick = () => {
+    tipo.innerText ="AGUA"
     muy.innerText ="Fuego, Tierra, Roca"
     poco.innerText ="Agua, Planta, Volador",
     nulo.innerText ="---",
@@ -49,6 +53,7 @@ agua.onclick = () => {
 }
 
 planta.onclick = () => {
+    tipo.innerText ="PLANTA"
     muy.innerText ="Agua, Tierra, Roca"
     poco.innerText ="Fuego, Planta, Volador, Veneno, Bicho, Dragon, Acero",
     nulo.innerText ="---",
@@ -57,6 +62,7 @@ planta.onclick = () => {
 }
 
 electrico.onclick = () => {
+    tipo.innerText ="ELECTRICO"
     muy.innerText ="Agua, Volador"
     poco.innerText ="Planta, Electrico, Dragon",
     nulo.innerText ="Tierra",
@@ -65,6 +71,7 @@ electrico.onclick = () => {
 }
 
 hielo.onclick = () => {
+    tipo.innerText ="HIELO"
     muy.innerText ="Planta, Tierra, Volador, Dragón"
     poco.innerText ="Fuego, Agua, Hielo, Acero",
     nulo.innerText ="---",
@@ -73,6 +80,7 @@ hielo.onclick = () => {
 }
 
 lucha.onclick = () => {
+    tipo.innerText ="LUCHA"
     muy.innerText ="Normal, Hielo, Roca, Siniestro, Acero"
     poco.innerText ="Veneno, Volador, Psíquico, Bicho, Hada",
     nulo.innerText ="Fantasma",
@@ -81,6 +89,7 @@ lucha.onclick = () => {
 }
 
 veneno.onclick = () => {
+    tipo.innerText ="VENENO"
     muy.innerText ="Planta, Hada"
     poco.innerText ="Veneno, Tierra, Roca, Fantasma",
     nulo.innerText ="Acero",
@@ -89,6 +98,7 @@ veneno.onclick = () => {
 }
 
 tierra.onclick = () => {
+    tipo.innerText ="VENENO"
     muy.innerText ="Fuego, Eléctrico, Veneno, Roca, Acero"
     poco.innerText ="Planta, Bicho",
     nulo.innerText ="Volador",
@@ -97,6 +107,7 @@ tierra.onclick = () => {
 }
 
 volador.onclick = () => {
+    tipo.innerText ="VOLADOR"
     muy.innerText ="Planta, Lucha, Bicho"
     poco.innerText ="Eléctrico, Roca, Acero",
     nulo.innerText ="---",
@@ -105,6 +116,7 @@ volador.onclick = () => {
 }
 
 psiquico.onclick = () => {
+    tipo.innerText ="PSIQUICO"
     muy.innerText ="Lucha, Veneno"
     poco.innerText ="Psíquico, Acero",
     nulo.innerText ="Siniestro",
@@ -113,6 +125,7 @@ psiquico.onclick = () => {
 }
 
 bicho.onclick = () => {
+    tipo.innerText ="BICHO"
     muy.innerText ="Planta, Psíquico, Siniestro"
     poco.innerText ="Fuego, Lucha, Veneno, Volador, Fantasma, Acero, Hada",
     nulo.innerText ="---",
@@ -121,6 +134,7 @@ bicho.onclick = () => {
 }
 
 roca.onclick = () => {
+    tipo.innerText ="ROCA"
     muy.innerText ="Fuego, Hielo, Volador, Bicho"
     poco.innerText ="Lucha, Tierra, Acero",
     nulo.innerText ="---",
@@ -129,6 +143,7 @@ roca.onclick = () => {
 }
 
 fantasma.onclick = () => {
+    tipo.innerText ="FANTASMA"
     muy.innerText ="Psíquico, Fantasma"
     poco.innerText ="Normal, Siniestro",
     nulo.innerText ="Normal",
@@ -137,6 +152,7 @@ fantasma.onclick = () => {
 }
 
 dragon.onclick = () => {
+    tipo.innerText ="DRAGON"
     muy.innerText ="Dragon"
     poco.innerText ="Acero",
     nulo.innerText ="Hada",
@@ -145,6 +161,7 @@ dragon.onclick = () => {
 }
 
 siniestro.onclick = () => {
+    tipo.innerText ="SINIESTRO"
     muy.innerText ="Psíquico, Fantasma"
     poco.innerText ="Lucha, Siniestro, Hada",
     nulo.innerText ="---",
@@ -153,6 +170,7 @@ siniestro.onclick = () => {
 }
 
 acero.onclick = () => {
+    tipo.innerText ="ACERO"
     muy.innerText ="Hielo, Roca, Hada"
     poco.innerText ="Fuego, Agua, Eléctrico, Acero",
     nulo.innerText ="---",
@@ -161,6 +179,7 @@ acero.onclick = () => {
 }
 
 hada.onclick = () => {
+    tipo.innerText ="HADA"
     muy.innerText ="Lucha, Dragón, Siniestro"
     poco.innerText ="Fuego, Veneno, Acero",
     nulo.innerText ="---",
@@ -169,10 +188,12 @@ hada.onclick = () => {
 }
 
 reset.onclick = () => {
+    tipo.innerText =""
     muy.innerText =""
     poco.innerText ="",
     nulo.innerText ="",
     vulne.innerText =""
+    Swal.fire('Reseteado')
 }
 
 

@@ -1,43 +1,29 @@
-let tocar = document.getElementById("tocar");
-let pokeale = document.getElementById("pokeale");
+const pokeimg = document.getElementById("pokeimg");
+const pokename = document.getElementById("pokename");
+const poketipo1 = document.getElementById("poketipo1");
+const poketipo2 = document.getElementById("poketipo2");
 
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+
+
+
+
+const searchPokemon = event => {
+    event.preventDefault();
+    const { value } = event.target.pokemon;
+    fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)
+        .then(data => data.json())
+        .then(response => PokemonData(response))
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const ramdom = getRandomInt(1, 152)
-    fetchData(ramdom)
-})
+const PokemonData = data => {
+    const sprite =  data.sprites.front_default;
+    const { stats, types } = data;
+    console.log(data)
 
-const fetchData = async (id) => {
-    try {
-        console.log(id)
-        
-        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-        const data = await res.json()
-        
-        console.log(data)
-        console.log(data.name)
-        pokeale.innerText = (data.name)
-
-    } catch (error) {
-        console.log(error)
-    }
-} 
-
-tocar.onclick = (fetchData)
-
-tocar.onclick = () => {
-    pokeale.innerText = (data.name)
+    pokeimg.setAttribute('src', sprite);
+    pokename.textContent = data.name .toUpperCase();
+    poketipo1.textContent =types[0].type.name; 
+    //poketipo2.textContent =types[1].type.name;      //metira error//             
+    
 }
-
-
-
-
-
-
-
-
-

@@ -17,8 +17,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" href="../pag/tipos.html">Tipos de Pokemon</a>
-                <a class="nav-link" href="../pag/equipo.html">Crea tu Equipo</a>
+                <a class="nav-link" href="../pag/tipos.html">PokeTypes</a>
+                <a class="nav-link" href="../pag/equipo.html">PokeTeam</a>
+                <a class="nav-link" href="../pag/fetch.html">PokeDex</a>
               </div>
             </div>
           </div>
@@ -27,25 +28,77 @@
 
   <div class="container text-center p-5 m-5">
     <h1>Crea tu Equipo</h1>
+    <form>
+      <div>
+        <label></label>
+        <input type="text" class="form-control" id="txtName" placeholder="Nombre del Equipo" autocomplete="off"> 
+      </div>
+
+      <div>
+        <label></label>
+        <input type="text" class="form-control" id="txtP1" placeholder="Pokemon 1" autocomplete="off"> 
+      </div>
+
+      <div>
+        <label></label>
+        <input type="text" class="form-control" id="txtP2" placeholder="Pokemon 2" autocomplete="off"> 
+      </div>
+
+      <div>
+        <label></label>
+        <input type="text" class="form-control" id="txtP3" placeholder="Pokemon 3" autocomplete="off"> 
+      </div>
+
+      <div>
+        <label></label>
+        <input type="text" class="form-control" id="txtP4" placeholder="Pokemon 4" autocomplete="off"> 
+      </div>
+
+      <div>
+        <label></label>
+        <input type="text" class="form-control" id="txtP5" placeholder="Pokemon 5" autocomplete="off"> 
+      </div>
+
+      <div>
+        <label></label>
+        <input type="text" class="form-control" id="txtP6" placeholder="Pokemon 6" autocomplete="off"> 
+      </div>
+
+      <button type="button" class="btn btn-primary m-3" id="boton">Guardar</button>
+
+    </form>
+
   </div>
 
-  <div class="container">
-    <div class="d-grid gap-5 d-md-block mx-auto">
-      <button class="btn btn-light btn-lg m-2" type="button" id="gen1">Generacion 1</button>
-      <button class="btn btn-light btn-lg m-2" type="button" id="gen2">Generacion 2</button>
-      <button class="btn btn-light btn-lg m-2" type="button" id="gen3">Generacion 3</button>
-    </div>
-</div>
+  <div class="container text-center">
+    <h2>Mis Equipos</h2>
+    <table class="table table-hover" id="pokeTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Pokemon 1</th>
+          <th>Pokemon 2</th>
+          <th>Pokemon 3</th>
+          <th>Pokemon 4</th>
+          <th>Pokemon 5</th>
+          <th>Pokemon 6</th>
+          <th>Seleccionar</th>
+        </tr>
+      </thead>
 
-<div class="col-md-3 m-2 p-2 bg-secondary mx-auto">
-    <div class="card m-3 align-text-top text-center mx-auto" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Tu Equipo sera</h5>
-          <p class="card-text" id="equipo"></p>
-        </div>
-</div>
+      <tbody>
 
-  <script src="equipo.js"></script>
+      </tbody>
+
+    </table>
+
+    <button type="button" class="btn btn-primary m-3" id="botonEliminar">Eliminar Equipos</button>
+
+  </div>
+
+
+  <script src="equipo1.js"></script>
+  <script src="equipo2.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
   

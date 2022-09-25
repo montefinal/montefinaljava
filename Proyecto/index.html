@@ -6,10 +6,11 @@
     <title>Pokepoke</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
+
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top>
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="150" height="40"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,14 +18,58 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" href="pag/tipos.html">Tipos de Pokemon</a>
-                <a class="nav-link" href="pag/equipo.html">Crea tu Equipo</a>
-                <a class="nav-link" href="pag/fetch.html">Aleatorio Fetch</a>
+                <a class="nav-link" href="pag/tipos.html">PokeTypes</a>
+                <a class="nav-link" href="pag/equipo.html">PokeTeam</a>
+                <a class="nav-link" href="pag/fetch.html">PokeDex</a>
               </div>
             </div>
           </div>
         </nav>
   </header>
+
+
+  <div class="container mt-3">
+    <div class="card-group">
+
+        <!--bootstrap card with 3 horizontal images-->
+        <div class="row">
+            <div class="card col-md-4">
+              <a href="pag/tipos.html">
+                <img class="card-img-top" src=
+"https://fontmeme.com/permalink/220914/2700f7e2513f53fa647d07000903dc50.png"></a>
+
+
+                <div class="card-body">
+                  <h3 class="card-title text-primary">Conoce todo sobre los Tipos de Pokemon</h3>
+                </div>
+            </div>
+
+            <div class="card col-md-4">
+              <a href="pag/equipo.html">
+                <img class="card-img-top" src=
+"https://fontmeme.com/permalink/220914/8f56f64158b6e620d6623c8364cd43ad.png"></a>
+                  
+                <div class="card-body">
+                  <h3 class="card-title text-primary text-center">Crea tu Equipo Pokemon</h3>
+                </div>
+            </div>
+              
+            <div class="card col-md-4">
+              <a href="pag/fetch.html">
+                <img class="card-img-top" src=
+"https://fontmeme.com/permalink/220914/e17fd01b736d954247a0c2255c766ad9.png"></a>
+                  
+                <div class="card-body">
+                  <h3 class="card-title text-primary">Base de datos de Pokemons</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
 
   <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
